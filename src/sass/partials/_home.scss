@@ -1,0 +1,188 @@
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}
+
+.home-wrapper {
+  margin: ($base-size * 3.5) auto;
+  padding: ($base-size * 6) ($base-size * 4);
+  background: $color-light;
+  border-bottom: 1px solid lighten($color-dark, 70%);
+  border-radius: $radius;
+}
+
+.opening-times {
+  background-color: $color-main;
+  border-radius: $radius;
+  margin-top: 7px;
+  width: inherit;
+  padding: 10px;
+}
+
+
+.top-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bw-photo {
+  height: 100px;
+  width: 290px;
+  object-fit: cover;
+  flex: 1;
+  overflow: hidden;
+  border-radius: $radius;
+}
+
+.col-6 {
+  overlay: hidden;
+}
+
+.bw-card {
+  height: 100px;
+}
+
+.card-body h2 {
+  margin-top: 130px;
+}
+
+.card-body p {
+  margin-top: 90px;
+  position: relative;
+  color: $color-light;
+  transition: 1s ease;
+}
+
+.bw-card:hover .card-body > p {
+  margin-top: 0;
+  margin-bottom: 130px;
+  color: $color-light;
+}
+
+.bw-card a {
+  text-decoration: none;
+}
+
+
+h2, h5 {
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-light;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 12px;
+}
+
+.carousel-section {
+  margin-top: 100px;
+}
+
+.carousel-indicators > li {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: lighten($color-dark, 70%);
+}
+
+.carousel-indicators {
+  position: relative;
+  top: 200px;
+}
+
+
+ol.carousel-indicators li.active {
+  background: $color-dark;
+}
+
+.carousel {
+  padding: 20px;
+}
+
+.quotes-img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: $radius;
+  object-fit: cover;
+}
+
+.gallery {
+  margin: 100px 0 0 0;
+}
+
+
+.gallery-photo {
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  border-radius: inherit;
+
+}
+
+.photo-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: $radius;
+  margin-bottom: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  right: 0;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fas-gallery {
+  color: rgba(0, 0, 0, 0);
+  font-size: 30px;
+  padding: 5px;
+  position: relative;
+  top: 60px;
+  left: 40px;
+}
+
+.photo-container:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 1s ease;
+}
+
+.photo-container:hover .fas-gallery {
+  color: rgba(255, 255, 255, 1);
+  transition: 1s ease;
+
+  &.fas-gallery:hover {
+    color: rgba(255, 107, 107, 1);
+    cursor: pointer;
+  }
+}
+
+.card {
+  border: none;
+}
+
+.ig {
+  color: $color-main;
+  text-decoration: underline;
+}
+
+.ig:hover {
+  color: $color-main;
+}
